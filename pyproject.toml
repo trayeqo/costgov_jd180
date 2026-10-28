@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trayeqo-costgov_jd180"
+version = "0.1.0"
+description = "把输入按语义边界切成独立单元，逐单元核对成本与容量治理专家·评测集泄漏与过拟合相关的特征并标出命中位置"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "trayeqo" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://trayeqo.github.io"
+Repository = "https://github.com/trayeqo/costgov_jd180"
+Issues = "https://github.com/trayeqo/costgov_jd180/issues"
+
+[project.scripts]
+costgov_jd180 = "costgov_jd180:main"
+
+[tool.setuptools]
+py-modules = ["costgov_jd180"]
